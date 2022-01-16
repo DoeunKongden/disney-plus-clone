@@ -62,13 +62,14 @@ const Logo = styled.img`
 const NavMenu = styled.div`
     display: flex;
     flex: 1;
-    margin-left: 20px;
     align-items: center;
+    justify-content: center;
+    margin-right: 30px;
 
     a{
         display: flex;
         align-items: center;
-        padding: 0 12px;
+        padding: 0 50px;
         cursor: pointer;
 
         img{
