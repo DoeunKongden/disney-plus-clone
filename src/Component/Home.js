@@ -6,7 +6,7 @@ import Viewers from './Viewers'
 function Home() {
     return (
         <Container>
-            <ImgSlider>   </ImgSlider>
+            <ImgSlider></ImgSlider>
             <Viewers></Viewers>
         </Container>
     )
