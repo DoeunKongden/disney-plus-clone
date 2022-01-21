@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useEffect } from 'react'
 import styled from 'styled-components'
 import ImgSlider from './ImgSlider'
 import Movies from './Movies'
 import Viewers from './Viewers'
+import db from '../firebase'
+
 
 function Home() {
+
+    useEffect(()=>{
+        db.collection("movies").onSnapshot((snapshot)=> {
+            console.log(snapshot);
+        }) // the thing inside useEffect will alwasy run when ever the home page is loading
+    },[])
+
     return (
         <Container>
             <ImgSlider></ImgSlider>

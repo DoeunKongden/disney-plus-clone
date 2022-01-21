@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Login from './Component/Login';
 
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
           <Switch>
             <Route path="/Detail">
                <Detail />
+            </Route>
+
+            <Route path="/Login">
+              <Login />
             </Route>
 
             <Route path="/Home">
